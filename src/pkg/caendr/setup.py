@@ -8,7 +8,8 @@ setup(
     'cachelib',
     'cyvcf2==0.30.14',
     'Flask_SQLAlchemy==2.5.1',
-    'Flask==1.1.2',
+    'SQLAlchemy<2',  # Flask-SQLAlchemy 2.5.x is incompatible with SQLAlchemy 2.0
+    'Flask==2.3.3',
     'google-api-python-client',
     'google-cloud-datastore',
     'google_cloud_logging',

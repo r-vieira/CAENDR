@@ -4,7 +4,8 @@ import numpy as np
 from logzero import logger
 
 
-from flask_wtf import FlaskForm, RecaptchaField, Form
+from flask_wtf import FlaskForm, RecaptchaField
+Form = FlaskForm  # flask_wtf.Form (deprecated alias of FlaskForm) was removed in Flask-WTF 1.0
 from wtforms import (StringField,
                      DateField,
                      BooleanField,
