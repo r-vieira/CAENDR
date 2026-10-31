@@ -1,6 +1,7 @@
 cachelib
 Flask_SQLAlchemy==2.5.1
-Flask==1.1.2
+SQLAlchemy<2
+Flask==2.3.3
 google-api-python-client
 google-cloud-datastore
 google_cloud_logging
